@@ -4,7 +4,7 @@ const Dashboard = () => {
   return (
     <div className="adminContainer">
       <AdminSidebar />
-      <main></main>
+      <main>gfgf</main>
     </div>
   );
 };
