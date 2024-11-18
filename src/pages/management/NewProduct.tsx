@@ -36,6 +36,8 @@ const NewProduct = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
+            </div>
+            <div>
               <label>Price</label>
               <input
                 required
@@ -44,6 +46,8 @@ const NewProduct = () => {
                 value={price}
                 onChange={(e) => setPrice(Number(e.target.value))}
               />
+            </div>
+            <div>
               <label>Stock</label>
               <input
                 required
@@ -52,18 +56,16 @@ const NewProduct = () => {
                 value={stock}
                 onChange={(e) => setStock(Number(e.target.value))}
               />
-              <label>Stock</label>
-              <input
-                required
-                type="file"
-                placeholder="Image"
-                value={photo}
-                onChange={changeImageHandler}
-              />
-
-              {photo && <img src={photo} alt="Your Image" />}
-              <button type="submit">Create</button>
             </div>
+
+            <div>
+              <label>Photo</label>
+              <input required type="file" onChange={changeImageHandler} />
+            </div>
+
+            {photo && <img src={photo} alt="New Image" />}
+
+            <button type="submit">Create</button>
           </form>
         </article>
       </main>
