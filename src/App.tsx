@@ -16,6 +16,9 @@ const ProductManagement = lazy(
 const TransactionManagement = lazy(
   () => import("./pages/management/TransactionManagement")
 );
+const Coupon = lazy(() => import("./pages/apps/Coupon"));
+const Toss = lazy(() => import("./pages/apps/Toss"));
+const Stopwatch = lazy(() => import("./pages/apps/Stopwatch"));
 
 const App = () => {
   return (
@@ -38,6 +41,10 @@ const App = () => {
               path="/admin/transaction/:id"
               element={<TransactionManagement />}
             />
+
+            <Route path="/admin/app/stopwatch" element={<Stopwatch />} />
+            <Route path="/admin/app/coupon" element={<Coupon />} />
+            <Route path="/admin/app/toss" element={<Toss />} />
           </Routes>
         </Suspense>
       </Router>
