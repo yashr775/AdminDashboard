@@ -1,5 +1,7 @@
 Admit dashboard for admin to observe application activity. This project has been created using react and typescript react-chartjs has been used to create chart and react table to create table , scss has been used as css library.
 
+Video demo:-
+
 Pages :-
 
 Dashboard
@@ -40,6 +42,10 @@ Line Chart
 
 ![LineChart](https://github.com/user-attachments/assets/4aafd038-ea98-4ead-928d-158fea09b05a)
 
+
+How to set this project locally 
+
+Clone this project run npm install aand than npm run dev 
 
 
 
