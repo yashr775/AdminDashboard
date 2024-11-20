@@ -1,1 +1,1 @@
-Admit dashboard for admin to observe application activity.
+Admit dashboard for admin to observe application activity. This project has been created using react and typescript react-chartjs has been used to create chart and react table to create table , scss has been used as css library.
